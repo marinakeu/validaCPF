@@ -15,7 +15,7 @@ module.exports = {
     'rules': {
         'indent': [
             'error',
-            4
+            2
         ],
         'linebreak-style': [
             'error',
@@ -28,6 +28,49 @@ module.exports = {
         'semi': [
             'error',
             'always'
-        ]
+        ],
+        'camelcase': 'error',
+        'eslint id-length': 'error',
+        'keyword-spacing': [
+            "error",
+            { "before": true }
+        ],
+        'space-infix-ops': "error",
+        'comma-spacing': [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        'space-before-blocks': "error",
+        'spaced-comment': [
+            "error",
+            "always"
+        ],
+        'key-spacing': [
+            "error",
+            { "beforeColon": false }
+        ],
+        'no-multi-spaces': "error",
+        'space-in-parens': [
+            "error",
+            "never"
+        ],
+        'space-before-function-paren': "error",
+        'func-call-spacing': [
+            "error",
+            "never"
+        ],
+        'no-multiple-empty-lines': "error",
+        'padded-blocks': [
+            "error",
+            "never"
+        ],
+        'no-floating-decimal': "error",
+        'object-property-newline': "error",
+        'brace-style': "error",
+        'eqeqeq': "error",
+        'no-array-constructor': "error",
     }
 };
