@@ -30,7 +30,7 @@ module.exports = {
             'always'
         ],
         'camelcase': 'error',
-        'eslint id-length': 'error',
+        'id-length': 'error',
         'keyword-spacing': [
             "error",
             { "before": true }
