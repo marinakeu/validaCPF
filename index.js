@@ -1,30 +1,24 @@
 function cpfValidator (cpfString) {
-  let cpf = cpfString.split('');
-  if (cpf.length < 11 || cpf.length > 11 || cpf.every(digit => digit === cpf[0])) {
-    return false;
-  } else if (digitValidator(cpf)) {
-    return true;
-  } else {
-    return false;
-  }
+  const cpf = cpfString.split('');
+  if (hasElevenDifferentDigits(cpf) && digitsValidator(cpf)) return true;
+  return false;
 }
 
-function digitValidator (cpf) {
-  let nineDigitsCpf = cpf.slice(0, 9);
-  let firstDigit = getDigits(nineDigitsCpf, false);
-  let tenDigitsCpf = nineDigitsCpf;
-  tenDigitsCpf.push(firstDigit);
-  let secondDigit = getDigits(tenDigitsCpf, true);
-  if (firstDigit === parseInt(cpf[9]) && secondDigit === parseInt(cpf[10])) {
-    return true;
-  } else {
-    return false;
-  }
+function hasElevenDifferentDigits (cpf) {
+  if (cpf.length < 11 || cpf.length > 11 || cpf.every(digit => digit === cpf[0])) return false;  
+  return true;
 }
 
-function getDigits (cpf, secondDigit) {
-  let number = secondDigit ? 11 : 10;
-  let multiply = cpf.map((element, index) => element * (number - index));
+function digitsValidator (cpf) {
+  let tenthDigit = getTenthAndEleventhDigits(cpf.slice(0, 9), false);
+  let eleventhDigit = getTenthAndEleventhDigits((cpf.slice(0, 9)).concat([tenthDigit]), true);
+  if (tenthDigit === parseInt(cpf[9]) && eleventhDigit === parseInt(cpf[10])) return true;
+  return false;
+}
+
+function getTenthAndEleventhDigits (cpf, eleventhDigit) {
+  let multiplier = eleventhDigit ? 11 : 10;
+  let multiply = cpf.map((element, index) => element * (multiplier - index));
   let sum = multiply.reduce((acc, element) => acc + element);
   let digit = (sum % 11) < 2 ? 0 : 11 - (sum % 11);
   return digit;
