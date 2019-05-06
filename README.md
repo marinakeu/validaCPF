@@ -8,9 +8,9 @@ $  npm install cpfvalidator-mk
 
 ## Como utilizar:
 
-> const cpfStringNumber = require("chayote-lib");
-> console.log(cpfStringNumber.cpfValidator('11144477735'))
-> // returns true
+    > const cpfStringNumber = require("chayote-lib");
+    > console.log(cpfStringNumber.cpfValidator('11144477735'))
+    > // returns true
 
 Obs: inserir o CPF em forma de string (com aspas) e apenas números (sem ponto ou traço).
 
