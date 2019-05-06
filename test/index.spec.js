@@ -18,6 +18,9 @@ describe('cpfValidator', () => {
     it('Deveria retornar false para CPF 111.444.777-24', () => {
         expect(piece.cpfValidator('11144477724')).to.equal(false);
     });
+    it('Deveria retornar false para CPF 111.444.777-240', () => {
+        expect(piece.cpfValidator('111444777240')).to.equal(false);
+    });
     it('Deveria retornar false para CPF 111.111.111-11', () => {
         expect(piece.cpfValidator('11111111111')).to.equal(false);
     });
