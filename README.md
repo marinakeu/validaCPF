@@ -1,4 +1,4 @@
-# Validador de CPF v.1.0.0
+# Validador de CPF v.1.0.1
 
 **Esta biblioteca se destina à validação de CPF a partir de dígitos verificadores.**  Na versão atual é possível verificar a partir do algorismo os dígitos do CPF, sem, contudo, verificar a existência deste na Receita Federal.
 
@@ -8,7 +8,7 @@ $  npm install cpfvalidator-mk
 
 ## Como utilizar:
 
-    > const cpfStringNumber = require("chayote-lib");
+    > const cpfStringNumber = require("cpfvalidator-mk");
     > console.log(cpfStringNumber.cpfValidator('11144477735'))
     > // returns true
 
