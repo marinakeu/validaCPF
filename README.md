@@ -1,6 +1,6 @@
 # Validador de CPF v.1.0.1
 
-**Esta biblioteca se destina à validação de CPF a partir de dígitos verificadores.**  Na versão atual é possível verificar a partir do algorismo os dígitos do CPF, sem, contudo, verificar a existência deste na Receita Federal.
+**Esta biblioteca se destina à validação de CPF a partir de dígitos verificadores.**  Na versão atual é possível verificar a partir do algoritmo os dígitos do CPF, sem, contudo, verificar a existência deste na Receita Federal.
 
 ## Como instalar:
 
