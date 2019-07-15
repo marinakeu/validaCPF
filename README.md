@@ -2,7 +2,7 @@
 
 **Esta biblioteca se destina à validação de CPF a partir de dígitos verificadores.**  
 
-Acesse a biblioteca no npm: cpfvalidator-mk](https://www.npmjs.com/package/cpfvalidator-mk)
+Acesse a biblioteca no npm: [cpfvalidator-mk](https://www.npmjs.com/package/cpfvalidator-mk)
 
 Na versão atual é possível verificar a partir do algoritmo os dígitos do CPF, sem, contudo, verificar a existência deste na Receita Federal.
 
